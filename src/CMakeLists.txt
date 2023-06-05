@@ -14,11 +14,7 @@ SET(ZXING_DIR  ${CMAKE_CURRENT_SOURCE_DIR}/zxing/zxing)
 SET(PROJECT_VERSION "3.3")
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_WARN_ON)
-message("----------------------------------------")
-if (BUILD_SHARED_LIBS)
-    message("Will add SHARED DEFINITIONS...")
-    add_definitions(-DQZXING_LIBRARY)
-endif()
+add_definitions(-DQZXING_LIBRARY)
 
 set(SOURCES
 
